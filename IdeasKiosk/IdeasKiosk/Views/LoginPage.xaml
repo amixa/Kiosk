@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="IdeasKiosk.Views.LoginPage"
+    NavigationPage.HasNavigationBar="false"
+    >
+
+<AbsoluteLayout>
+        <ScrollView 
+            AbsoluteLayout.LayoutBounds="0,0,1,1"
+            AbsoluteLayout.LayoutFlags="All"
+            VerticalOptions="FillAndExpand"
+            >
+
+            <Grid Padding="20,20,20,50">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />       
+                </Grid.RowDefinitions>
+
+                <StackLayout Grid.Row="0" HorizontalOptions="FillAndExpand">
+                    <Image Source="Planbox_Logo_Name.png"/>
+                </StackLayout> 
+
+                <Grid Grid.Row="1" RowSpacing="30">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>   
+                        <RowDefinition Height="Auto"/> 
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="170"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackLayout Grid.Row="0" Grid.Column="0"  Padding="0,200,0,0">
+                        <Label 
+                            Text="Server"
+                            Style="{StaticResource LabelForField}"
+                        />
+
+                    </StackLayout>
+                    <StackLayout Grid.Row="0" Grid.Column="1" Padding="0,200,0,0">
+                        <Entry
+                            Text="{Binding Server}"
+                            Placeholder="Server"
+                            HorizontalOptions="FillAndExpand"
+                            Style="{StaticResource EntryField}"
+                        />
+                    </StackLayout>                                     
+                </Grid>
+
+                <StackLayout Grid.Row="2" Padding="0,100,0,0">
+                    <Button 
+                        Text="Login"
+                        Style="{StaticResource SimpleButton}"
+                        Command="{Binding LoginCommand}"
+                    />
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+</AbsoluteLayout>
+
+
+</ContentPage>

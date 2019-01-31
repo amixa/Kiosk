@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    NavigationPage.HasNavigationBar="false"
+    x:Class="IdeasKiosk.Views.HomePage">
+
+
+    <Grid ColumnSpacing="20" Margin="0" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+              
+        <WebView
+            Grid.ColumnSpan="4"    
+            Grid.Row="0"
+            Navigated="Handle_Navigated"
+            x:Name="Browser"
+            HeightRequest="2000"
+            Source="{Binding ServerUrl}" 
+        />
+            
+<!--        <StackLayout Grid.Row="1" BackgroundColor="Transparent" Grid.ColumnSpan="4" Orientation="Horizontal" >
+             <Button Grid.Column="0" Clicked="backClicked"  Image="left-arrow.png" HorizontalOptions="Start" Margin="10,0,0,0"/>
+             <Button Grid.Column="1" Clicked="forwardClicked"   Image="right-arrow.png"/>
+             <Label  Grid.Column="2" Text="{Binding CurrentUrl1}" VerticalOptions="Center"  HorizontalOptions="FillAndExpand"/>
+             <Button Grid.Column="3" Image="settings.png" Command="{Binding SettingsCommand}" HorizontalOptions="End" Margin="0,0,10,0" />
+        </StackLayout>-->
+        
+    </Grid>
+
+</ContentPage>

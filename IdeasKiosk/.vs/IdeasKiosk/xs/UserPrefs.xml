@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{1D11CCFD-9FBA-4C70-AE6A-AE13606153D6}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="IdeasKiosk/ViewModels/LoginViewModel.cs">
+    <Files>
+      <File FileName="IdeasKiosk/Views/LoginPage.xaml" Line="68" Column="1" />
+      <File FileName="IdeasKiosk/Views/LoginPage.xaml.cs" Line="13" Column="61" />
+      <File FileName="IdeasKiosk/Views/HomePage.xaml.cs" Line="15" Column="71" />
+      <File FileName="IdeasKiosk/Views/HomePage.xaml" Line="40" Column="1" />
+      <File FileName="IdeasKiosk/App.xaml.cs" Line="41" Column="13" />
+      <File FileName="IdeasKiosk/ViewModels/HomeViewModel.cs" Line="15" Column="6" />
+      <File FileName="IdeasKiosk/ViewModels/LoginViewModel.cs" Line="51" Column="14" />
+      <File FileName="IdeasKiosk/Models/Core/Preferences.cs" Line="11" Column="34" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.IdeasKiosk HideGettingStarted="True" />
+  <MonoDevelop.Ide.ItemProperties.IdeasKiosk.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.IdeasKiosk.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.7AD0FDE2-A5E5-4B7A-99D4-2E54D472D889">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.IdeasKiosk.iOS>
+</Properties>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="IdeasKiosk.App">
+	<Application.Resources>
+
+        <ResourceDictionary>
+
+            <x:Double x:Key="BaseFieldHeightRequest">40</x:Double>
+            
+            <Style x:Key="LabelForField" TargetType="Label">
+                <Setter Property="FontSize" Value="18" />           
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="HeightRequest" Value="{StaticResource BaseFieldHeightRequest}" /> 
+                <Setter Property="VerticalTextAlignment" Value="Center" />
+            </Style>
+
+            <Style x:Key="EntryField" TargetType="Entry">
+                <Setter Property="HeightRequest" Value="{StaticResource BaseFieldHeightRequest}" />
+            </Style>
+
+            <Style x:Key="SimpleButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#007bcc" />
+                <Setter Property="TextColor" Value="White"/>
+            </Style>
+        </ResourceDictionary>
+
+        
+	</Application.Resources>
+</Application>
